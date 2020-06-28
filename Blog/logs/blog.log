@@ -1,0 +1,132 @@
+INFO 2020-06-28 08:44:30,638 autoreload 598 Watching for file changes with StatReloader
+INFO 2020-06-28 08:45:54,225 autoreload 598 Watching for file changes with StatReloader
+ERROR 2020-06-28 08:45:59,463 exception 77 Invalid HTTP_HOST header: '121.36.97.197:9000'. You may need to add '121.36.97.197' to ALLOWED_HOSTS.
+WARNING 2020-06-28 08:45:59,509 log 228 Bad Request: /
+WARNING 2020-06-28 08:45:59,510 basehttp 157 "GET / HTTP/1.1" 400 64935
+ERROR 2020-06-28 08:46:00,043 exception 77 Invalid HTTP_HOST header: '121.36.97.197:9000'. You may need to add '121.36.97.197' to ALLOWED_HOSTS.
+WARNING 2020-06-28 08:46:00,082 log 228 Bad Request: /favicon.ico
+WARNING 2020-06-28 08:46:00,083 basehttp 157 "GET /favicon.ico HTTP/1.1" 400 64978
+INFO 2020-06-28 08:47:06,241 autoreload 598 Watching for file changes with StatReloader
+INFO 2020-06-28 08:47:08,045 basehttp 157 "GET / HTTP/1.1" 200 16351
+INFO 2020-06-28 08:47:08,094 basehttp 157 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2020-06-28 08:47:08,212 basehttp 157 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2020-06-28 08:47:10,129 basehttp 157 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2020-06-28 08:47:10,137 basehttp 157 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+WARNING 2020-06-28 08:47:10,510 log 228 Not Found: /favicon.ico
+WARNING 2020-06-28 08:47:10,510 basehttp 157 "GET /favicon.ico HTTP/1.1" 404 1974
+INFO 2020-06-28 09:23:28,854 autoreload 598 Watching for file changes with StatReloader
+INFO 2020-06-28 09:24:30,500 autoreload 598 Watching for file changes with StatReloader
+ERROR 2020-06-28 09:24:34,826 log 228 Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Blog/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/root/.virtualenvs/Blog/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.virtualenvs/Blog/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/Blog01/Blog/my/views.py", line 7, in index
+    return render(request,'index.html')
+  File "/root/.virtualenvs/Blog/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/root/.virtualenvs/Blog/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/.virtualenvs/Blog/lib/python3.7/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+ERROR 2020-06-28 09:24:34,827 basehttp 157 "GET / HTTP/1.1" 500 79721
+INFO 2020-06-28 09:30:58,702 autoreload 598 Watching for file changes with StatReloader
+INFO 2020-06-28 09:31:04,396 basehttp 157 "GET / HTTP/1.1" 200 11726
+WARNING 2020-06-28 09:31:04,528 log 228 Not Found: /bootstrap/css/bootstrap.min.css
+WARNING 2020-06-28 09:31:04,528 basehttp 157 "GET /bootstrap/css/bootstrap.min.css HTTP/1.1" 404 2195
+WARNING 2020-06-28 09:31:04,534 log 228 Not Found: /md_css/monokai.css
+WARNING 2020-06-28 09:31:04,535 basehttp 157 "GET /md_css/monokai.css HTTP/1.1" 404 2156
+WARNING 2020-06-28 09:31:04,544 log 228 Not Found: /common/common.css
+WARNING 2020-06-28 09:31:04,545 basehttp 157 "GET /common/common.css HTTP/1.1" 404 2153
+WARNING 2020-06-28 09:31:04,547 log 228 Not Found: /common/jquery.pagination.css
+WARNING 2020-06-28 09:31:04,547 basehttp 157 "GET /common/jquery.pagination.css HTTP/1.1" 404 2186
+WARNING 2020-06-28 09:31:04,551 log 228 Not Found: /js/jquery-1.12.4.min.js
+WARNING 2020-06-28 09:31:04,552 basehttp 157 "GET /js/jquery-1.12.4.min.js HTTP/1.1" 404 2171
+WARNING 2020-06-28 09:31:04,554 log 228 Not Found: /js/axios-0.18.0.min.js
+WARNING 2020-06-28 09:31:04,549 log 228 Not Found: /js/vue-2.5.16.js
+WARNING 2020-06-28 09:31:04,554 basehttp 157 "GET /js/vue-2.5.16.js HTTP/1.1" 404 2150
+WARNING 2020-06-28 09:31:04,554 basehttp 157 "GET /js/axios-0.18.0.min.js HTTP/1.1" 404 2168
+WARNING 2020-06-28 09:31:04,580 log 228 Not Found: /js/host.js
+WARNING 2020-06-28 09:31:04,580 basehttp 157 "GET /js/host.js HTTP/1.1" 404 2132
+WARNING 2020-06-28 09:31:04,597 log 228 Not Found: /js/common.js
+WARNING 2020-06-28 09:31:04,598 basehttp 157 "GET /js/common.js HTTP/1.1" 404 2138
+WARNING 2020-06-28 09:31:04,613 log 228 Not Found: /js/index.js
+WARNING 2020-06-28 09:31:04,613 basehttp 157 "GET /js/index.js HTTP/1.1" 404 2135
+WARNING 2020-06-28 09:31:04,636 log 228 Not Found: /js/jquery.pagination.min.js
+WARNING 2020-06-28 09:31:04,636 basehttp 157 "GET /js/jquery.pagination.min.js HTTP/1.1" 404 2183
+WARNING 2020-06-28 09:31:04,654 log 228 Not Found: /img/1.jpg
+WARNING 2020-06-28 09:31:04,654 basehttp 157 "GET /img/1.jpg HTTP/1.1" 404 2129
+WARNING 2020-06-28 09:31:05,664 log 228 Not Found: /js/axios-0.18.0.min.js
+WARNING 2020-06-28 09:31:05,664 basehttp 157 "GET /js/axios-0.18.0.min.js HTTP/1.1" 404 2168
+WARNING 2020-06-28 09:31:05,689 log 228 Not Found: /js/jquery-1.12.4.min.js
+WARNING 2020-06-28 09:31:05,689 basehttp 157 "GET /js/jquery-1.12.4.min.js HTTP/1.1" 404 2171
+WARNING 2020-06-28 09:31:05,721 log 228 Not Found: /img/1.jpg
+WARNING 2020-06-28 09:31:05,722 basehttp 157 "GET /img/1.jpg HTTP/1.1" 404 2129
+WARNING 2020-06-28 09:31:05,779 log 228 Not Found: /js/host.js
+WARNING 2020-06-28 09:31:05,780 basehttp 157 "GET /js/host.js HTTP/1.1" 404 2132
+WARNING 2020-06-28 09:31:05,812 log 228 Not Found: /js/common.js
+WARNING 2020-06-28 09:31:05,812 basehttp 157 "GET /js/common.js HTTP/1.1" 404 2138
+WARNING 2020-06-28 09:31:05,837 log 228 Not Found: /js/index.js
+WARNING 2020-06-28 09:31:05,837 basehttp 157 "GET /js/index.js HTTP/1.1" 404 2135
+WARNING 2020-06-28 09:31:05,864 log 228 Not Found: /js/jquery.pagination.min.js
+WARNING 2020-06-28 09:31:05,865 basehttp 157 "GET /js/jquery.pagination.min.js HTTP/1.1" 404 2183
+WARNING 2020-06-28 09:31:16,142 log 228 Not Found: /detail.html
+WARNING 2020-06-28 09:31:16,143 basehttp 157 "GET /detail.html HTTP/1.1" 404 2135
+WARNING 2020-06-28 09:31:17,550 log 228 Not Found: /common/common.css
+WARNING 2020-06-28 09:31:17,552 basehttp 157 "GET /common/common.css HTTP/1.1" 404 2153
+WARNING 2020-06-28 09:31:17,552 log 228 Not Found: /common/jquery.pagination.css
+WARNING 2020-06-28 09:31:17,553 basehttp 157 "GET /common/jquery.pagination.css HTTP/1.1" 404 2186
+WARNING 2020-06-28 09:31:17,586 log 228 Not Found: /js/axios-0.18.0.min.js
+WARNING 2020-06-28 09:31:17,586 basehttp 157 "GET /js/axios-0.18.0.min.js HTTP/1.1" 404 2168
+WARNING 2020-06-28 09:31:17,589 log 228 Not Found: /js/vue-2.5.16.js
+WARNING 2020-06-28 09:31:17,589 basehttp 157 "GET /js/vue-2.5.16.js HTTP/1.1" 404 2150
+WARNING 2020-06-28 09:31:17,591 log 228 Not Found: /js/jquery-1.12.4.min.js
+WARNING 2020-06-28 09:31:17,591 basehttp 157 "GET /js/jquery-1.12.4.min.js HTTP/1.1" 404 2171
+WARNING 2020-06-28 09:31:17,614 log 228 Not Found: /js/axios-0.18.0.min.js
+WARNING 2020-06-28 09:31:17,615 basehttp 157 "GET /js/axios-0.18.0.min.js HTTP/1.1" 404 2168
+WARNING 2020-06-28 09:31:17,617 log 228 Not Found: /js/host.js
+WARNING 2020-06-28 09:31:17,617 basehttp 157 "GET /js/host.js HTTP/1.1" 404 2132
+WARNING 2020-06-28 09:31:17,640 log 228 Not Found: /js/jquery-1.12.4.min.js
+WARNING 2020-06-28 09:31:17,640 basehttp 157 "GET /js/jquery-1.12.4.min.js HTTP/1.1" 404 2171
+WARNING 2020-06-28 09:31:17,643 log 228 Not Found: /js/common.js
+WARNING 2020-06-28 09:31:17,643 basehttp 157 "GET /js/common.js HTTP/1.1" 404 2138
+WARNING 2020-06-28 09:31:17,664 log 228 Not Found: /js/index.js
+WARNING 2020-06-28 09:31:17,665 basehttp 157 "GET /js/index.js HTTP/1.1" 404 2135
+WARNING 2020-06-28 09:31:17,669 log 228 Not Found: /js/host.js
+WARNING 2020-06-28 09:31:17,669 basehttp 157 "GET /js/host.js HTTP/1.1" 404 2132
+WARNING 2020-06-28 09:31:17,671 log 228 Not Found: /js/jquery.pagination.min.js
+WARNING 2020-06-28 09:31:17,671 basehttp 157 "GET /js/jquery.pagination.min.js HTTP/1.1" 404 2183
+WARNING 2020-06-28 09:31:17,689 log 228 Not Found: /js/index.js
+WARNING 2020-06-28 09:31:17,689 basehttp 157 "GET /js/index.js HTTP/1.1" 404 2135
+WARNING 2020-06-28 09:31:17,714 log 228 Not Found: /js/jquery.pagination.min.js
+WARNING 2020-06-28 09:31:17,714 basehttp 157 "GET /js/jquery.pagination.min.js HTTP/1.1" 404 2183
+WARNING 2020-06-28 09:31:19,664 log 228 Not Found: /detail.html
+WARNING 2020-06-28 09:31:19,665 basehttp 157 "GET /detail.html HTTP/1.1" 404 2135
+WARNING 2020-06-28 09:31:20,965 log 228 Not Found: /common/jquery.pagination.css
+WARNING 2020-06-28 09:31:20,967 log 228 Not Found: /common/common.css
+WARNING 2020-06-28 09:31:20,968 basehttp 157 "GET /common/common.css HTTP/1.1" 404 2153
+WARNING 2020-06-28 09:31:20,967 basehttp 157 "GET /common/jquery.pagination.css HTTP/1.1" 404 2186
+WARNING 2020-06-28 09:31:20,988 log 228 Not Found: /js/axios-0.18.0.min.js
+WARNING 2020-06-28 09:31:20,989 basehttp 157 "GET /js/axios-0.18.0.min.js HTTP/1.1" 404 2168
+WARNING 2020-06-28 09:31:20,990 log 228 Not Found: /js/vue-2.5.16.js
+WARNING 2020-06-28 09:31:20,990 basehttp 157 "GET /js/vue-2.5.16.js HTTP/1.1" 404 2150
+WARNING 2020-06-28 09:31:20,992 log 228 Not Found: /js/jquery-1.12.4.min.js
+WARNING 2020-06-28 09:31:20,992 basehttp 157 "GET /js/jquery-1.12.4.min.js HTTP/1.1" 404 2171
+WARNING 2020-06-28 09:31:21,012 log 228 Not Found: /js/axios-0.18.0.min.js
+WARNING 2020-06-28 09:31:21,012 basehttp 157 "GET /js/axios-0.18.0.min.js HTTP/1.1" 404 2168
+WARNING 2020-06-28 09:31:21,013 log 228 Not Found: /js/host.js
+WARNING 2020-06-28 09:31:21,014 basehttp 157 "GET /js/host.js HTTP/1.1" 404 2132
+WARNING 2020-06-28 09:31:21,039 log 228 Not Found: /js/jquery-1.12.4.min.js
+WARNING 2020-06-28 09:31:21,039 basehttp 157 "GET /js/jquery-1.12.4.min.js HTTP/1.1" 404 2171
+WARNING 2020-06-28 09:31:21,041 log 228 Not Found: /js/index.js
+WARNING 2020-06-28 09:31:21,042 basehttp 157 "GET /js/index.js HTTP/1.1" 404 2135
+WARNING 2020-06-28 09:31:21,062 log 228 Not Found: /js/jquery.pagination.min.js
+WARNING 2020-06-28 09:31:21,062 basehttp 157 "GET /js/jquery.pagination.min.js HTTP/1.1" 404 2183
+WARNING 2020-06-28 09:31:21,066 log 228 Not Found: /js/host.js
+WARNING 2020-06-28 09:31:21,066 basehttp 157 "GET /js/host.js HTTP/1.1" 404 2132
+WARNING 2020-06-28 09:31:21,092 log 228 Not Found: /js/jquery.pagination.min.js
+WARNING 2020-06-28 09:31:21,092 basehttp 157 "GET /js/jquery.pagination.min.js HTTP/1.1" 404 2183
