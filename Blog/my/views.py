@@ -1,7 +1,8 @@
 from django.shortcuts import render
-
+from django.views import View
 # Create your views here.
 
 #默认页
-def index(request):
-    return render(request,'index.html')
+class IndexView(View):
+    def get(self,request):
+        return render(request,'index.html')
