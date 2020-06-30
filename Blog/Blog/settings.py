@@ -109,9 +109,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-Hans'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
@@ -191,3 +191,13 @@ LOGGING = {
 
 #指定本项目用户模型类
 AUTH_USER_MODEL = 'users.User'
+
+#设置未登录用户跳转的路由地址
+LOGIN_URL = '/login/'
+
+#设置头像上传路径
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+#设置图片的统一url都由media开头
+# 图片的统一路由
+MEDIA_URL = '/media/'

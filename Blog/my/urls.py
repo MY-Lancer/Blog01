@@ -18,5 +18,7 @@ from django.urls import path,include,re_path
 from my.views import *
 urlpatterns = [
         path('',IndexView.as_view(),name='index'),
+        #文章内容详情页路由
+        path('detail/', DetailView.as_view(),name='detail'),
 ]
 
