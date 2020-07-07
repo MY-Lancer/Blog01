@@ -4,7 +4,7 @@ from django.urls import reverse
 from django.views import View
 from my.models import ArticleCategory,Article
 from django.http.response import HttpResponseNotFound
-from my.models import * 
+from my.models import *
 # Create your views here.
 #默认页登录界面，即博客的内容界面
 class IndexView(View):

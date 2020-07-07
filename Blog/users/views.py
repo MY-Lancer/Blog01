@@ -9,7 +9,7 @@ from django.shortcuts import  redirect
 from django.urls import reverse
 from users.models import User
 #注册my引用的模型类
-from my.models import ArticleCategory
+from my.models import *
 
 #注册视图
 
